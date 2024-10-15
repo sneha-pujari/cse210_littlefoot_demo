@@ -10,7 +10,7 @@
     "build:scripts": "rollup --config --bundleConfigAsCjs",
     "build:styles": "postcss src/littlefoot.css --output dist/littlefoot.css",
     "build:types": "tsc --declaration --emitDeclarationOnly --declarationDir dist",
-    "build": "npm run clean && mkdir -p dist && concurrently 'npm run build:types' 'npm run build:scripts' 'npm run build:styles' 'rollup -c rollup.config.js'",
+    "build": "npm run clean && mkdir -p dist && concurrently 'npm run build:types' 'npm run build:scripts' 'npm run build:styles' 'rollup -c rollup.config.js' 'rollup --config rollup.config.js --bundleConfigAsCjs'",
     "commit": "git-cz",
     "watch:scripts": "rollup --config --bundleConfigAsCjs --watch",
     "watch:styles": "npm run build:styles --watch",
