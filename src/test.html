@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Littlefoot Demo</title>
+    <link rel="stylesheet" href="../src/littlefoot.css">
+    <!-- <link
+  rel="stylesheet"
+  href="https://unpkg.com/littlefoot/dist/littlefoot.css"
+/> -->
+    <style>
+        .littlefoot-footnote__button {
+            background-color: #007bff;
+        }
+        .littlefoot-footnote__content {
+            background-color: #f8f9fa;
+        }
+        body { 
+            font-family: 'Courier New', 
+            monospace; line-height: 1.6; 
+            background-color: #f9f5e7; 
+        }
+        .recipe { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            padding: 20px; 
+        }
+        h1 { 
+            color: #8b4513; 
+        }
+        .littlefoot-footnote__button { 
+            background-color: #d2691e; 
+        }
+        .littlefoot-footnote__content { 
+            background-color: #fffacd; border: 1px solid #d2691e; 
+        }
+    </style>
+</head>
+<body>
+    <div class="recipe">
+        <h1>Littlefoot Demo</h1>
+        <h2>Special Recipe</h2>
+        
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>2 cups all-purpose flour</li>
+            <li>1 cup butter, softened</li>
+            <li>3/4 cup sugar<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup></li>
+            <li>1 egg</li>
+            <li>1 teaspoon vanilla extract<sup id="fnref:2"><a href="#fn:2" rel="footnote">2</a></sup></li>
+        </ul>
+
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Preheat oven to 350°F (175°C).</li>
+            <li>Cream together butter and sugar until smooth.<sup id="fnref:3"><a href="#fn:3" rel="footnote">3</a></sup></li>
+            <li>Beat in egg and vanilla extract.</li>
+            <li>Gradually blend in flour.<sup id="fnref:4"><a href="#fn:4" rel="footnote">4</a></sup></li>
+            <li>Drop by spoonfuls onto ungreased cookie sheets.</li>
+            <li>Bake for 8 to 10 minutes or until golden.<sup id="fnref:5"><a href="#fn:5" rel="footnote">5</a></sup></li>
+        </ol>
+    </div>
+
+    <div class="footnotes">
+        <ol>
+            <li id="fn:1">Secret: Add a pinch of brown sugar for extra depth.</li>
+            <li id="fn:2">Grandma's tip: Use real vanilla beans for best flavor.</li>
+            <li id="fn:3">Chef's secret: Add a tablespoon of honey at this stage.</li>
+            <li id="fn:4">Pro tip: Chill the dough for 30 minutes before baking.</li>
+            <li id="fn:5">Grandma's trick: Leave them slightly underbaked for chewier cookies.</li>
+        </ol>
+    </div>
+
+    <script src="../src/littlefoot.ts" type="application/typescript"></script>
+    <script>
+        littlefoot.littlefoot()
+    </script>
+    <script
+    src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+    type="application/javascript"
+  ></script>
+  <!-- <script type="application/javascript">
+    littlefoot.littlefoot() 
+  </script> -->
+  <script>
+    littlefoot.default({
+        activateOnHover: true,
+        dismissOnUnhover: true,
+        hoverDelay: 250,
+    });
+</script>
+</body>
+</html>

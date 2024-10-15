@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ES5",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "lib": ["ESNext", "DOM", "ScriptHost"],
+      "declaration": false,
+      "strict": true,
+      "noUncheckedIndexedAccess": true,
+      "esModuleInterop": true,
+      "noEmitOnError": false,
+      "allowJs": false,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "incremental": false,
+      "importHelpers": false
+    },
+    "include": ["./src"]
+}
