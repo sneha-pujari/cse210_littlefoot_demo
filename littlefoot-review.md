@@ -4,7 +4,7 @@
  [[Updated Demo Repo](https://github.com/sneha-pujari/cse210_littlefoot_demo)]
 
 # littlefoot.js Code Review
-<img src="littlefoot-demo.png" width="500"/>
+<img src="img/littlefoot-demo.png" width="500"/>
 
 ## 1. Architecture Overview
 > - Overview of the major components and their interactions.
@@ -74,7 +74,6 @@
 ### 1. Documentation could be better
 - Instead of the provided code snippets, it would be helpful to explain with full code to understand how to integrate littlefoot into the existing code.
 - Expecially for the 'Options' and 'Theming' parts, it would be nice if they explain in detail of how do we can apply the change with corresponding code examples.
-- 
 
 ### 2. De-highlighting Button
  Focus isn't necessary to highlight the button while it's selected because of the active/is active/hover flags. It will be highlighted when you are still hovering after clicking, but then you don't need to click other places on the document to dehighlight it. Opening the footnote is what sets the active flags to true. We set the hover delay to 0 so we don't see the animation. We shrunk the button, and changed our test file src so that it doesn't have redundancies.
@@ -82,8 +81,8 @@
 
 <table>
   <tr>
-    <td> <img src="littlefoot-button-old.gif" width="250" height="250"/> </td>
-    <td> <img src="littlefoot-button-new.gif" width="250" height="250"/> </td>
+    <td> <img src="img/littlefoot-button-old.gif" width="250" height="250"/> </td>
+    <td> <img src="img/littlefoot-button-new.gif" width="250" height="250"/> </td>
    </tr> 
    <tr>
       <td>Before</td>
@@ -93,9 +92,18 @@
 
 
  ### 3. Include footnote numbering within the actual footnote popup
-
+<table>
+  <tr>
+    <td> <img src="img/littlefoot-number-before.png" width="250" height="250"/> </td>
+    <td> <img src="img/littlefoot-number-after.png" width="250" height="250"/> </td>
+   </tr> 
+   <tr>
+      <td>Before</td>
+      <td>After</td>
+  </tr>
+</table>
 
  ### 4. CSS Changes
 
 - Added a custom HTML file to demonstrate the footnotes functionality.
-- Created CSS files for custom styling such as font, pop-up of the littlefoot footnote, hover and click opening of the footnote
+- Created CSS files for custom styling such as font, pop-up of the littlefoot footnote, hover and click opening of the footnote.
