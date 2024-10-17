@@ -66,8 +66,8 @@
 ---
 ---
 
-## Changes made
-[[Updated Github Repo](https://github.com/cjychoi/CSE210-littlefoot)]
+## Improvements
+[[Updated Github Repo](https://github.com/sneha-pujari/cse210_littlefoot_demo)]
 ### 1. De-highlighting Button
  Focus isn't necessary to highlight the button while it's selected because of the active/is active/hover flags. It will be highlighted when you are still hovering after clicking, but then you don't need to click other places on the document to dehighlight it. Opening the footnote is what sets the active flags to true.
 
