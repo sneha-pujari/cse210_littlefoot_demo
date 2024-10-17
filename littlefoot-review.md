@@ -76,6 +76,9 @@
 - Expecially for the 'Options' and 'Theming' parts, it would be nice if they explain in detail of how do we can apply the change with corresponding code examples.
 
 ### 2. De-highlighting Button
+ - Clicking the button to minimize the footnote leaves the button highlighted, dehighlight it
+- Littlefoot.css checks the littlefoot_button for the focus class/tag in addition to the active, is-active, and hover attributes. Remove this check.
+
  Focus isn't necessary to highlight the button while it's selected because of the active/is active/hover flags. It will be highlighted when you are still hovering after clicking, but then you don't need to click other places on the document to dehighlight it. Opening the footnote is what sets the active flags to true. We set the hover delay to 0 so we don't see the animation. We shrunk the button, and changed our test file src so that it doesn't have redundancies.
 
 
@@ -92,6 +95,9 @@
 
 
  ### 3. Include footnote numbering within the actual footnote popup
+ - The number(order of the footnote) will show up at the beginning of the context
+- Changed under setting.ts in contentTempate, add  ``` <% number %> ```  Before  ``` <% content %> ``` 
+
 <table>
   <tr>
     <td> <img src="img/littlefoot-number-before.png" width="250" height="250"/> </td>
