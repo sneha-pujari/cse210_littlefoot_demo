@@ -4,6 +4,7 @@
  [[Updated Demo Repo](https://github.com/sneha-pujari/cse210_littlefoot_demo)]
 
 # littlefoot.js Code Review
+<img src="littlefoot-demo.png" width="600"/>
 
 ## 1. Architecture Overview
 > - Overview of the major components and their interactions.
@@ -65,9 +66,6 @@
 ## Final Recommendation
 - littlefoot.js is a solid, well-designed library with minimal issues. I would recommend it for use in projects that require enhanced footnote functionality. The effort to address minor shortcomings is minimal, making it a good fit for most use cases.
 
-
-
----
 ---
 
 ## Improvements
@@ -98,7 +96,6 @@
 
 
  ### 4. CSS Changes
-<img width="654" alt="littlefoot-demo" src="https://github.com/user-attachments/assets/7028cdff-d2ac-42f4-b1ed-59ddb46582aa">
 
 - Added a custom HTML file to demonstrate the footnotes functionality.
 - Created CSS files for custom styling such as font, pop-up of the littlefoot footnote, hover and click opening of the footnote
