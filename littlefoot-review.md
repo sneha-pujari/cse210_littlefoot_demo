@@ -21,6 +21,8 @@
 
 - Modularity: Each responsibility, such as DOM manipulation, event handling, and settings management, is neatly divided into its own module. This ensures separation of concerns and makes the library easy to extend or modify.
 - Best Practices: The code adheres to modern JavaScript/TypeScript practices, leveraging ES6+ features like destructuring and default parameters.
+- The hover delay looks very odd, it pops up small, delays, and then has the expanded animation. This is not an issue without delay set to a value.
+- The hover and clicking functionality are a little odd together when hover is activated. 
 
 ## 3. Code Organization and Quality
 > - Code readability and maintainability.
@@ -47,7 +49,7 @@
 > - Tooling quality (package managers, linter, formatter).
 > - Build and testing experience.
 
-- The setup process wasn't the best. Some parts of the documentation were vague, without specific instructions on the setup. Some Developers unfamiliar with HTML/JS plugins might face a slight learning curve. Instead of the provided code snippets, it would be helpful to explain with full code to understand how to integrate littlefoot into my existing code.
+- The setup process wasn't the best. Some parts of the documentation were vague, without specific instructions on the setup. Some Developers unfamiliar with HTML/JS plugins might face a slight learning curve. 
 - Tooling Quality: The use of Commitlint, Husky, and Vitest indicates a focus on maintaining code quality and enforcing commit standards.
 - Challenges: The library could benefit from more detailed testing coverage, especially for edge cases involving different footnote markup structures.
 
@@ -68,10 +70,22 @@
 
 ## Improvements
 [[Updated Github Repo](https://github.com/sneha-pujari/cse210_littlefoot_demo)]
-### 1. De-highlighting Button
+
+### 1. Documentation could be better
+- Instead of the provided code snippets, it would be helpful to explain with full code to understand how to integrate littlefoot into my existing code.
+
+### 2. De-highlighting Button
  Focus isn't necessary to highlight the button while it's selected because of the active/is active/hover flags. It will be highlighted when you are still hovering after clicking, but then you don't need to click other places on the document to dehighlight it. Opening the footnote is what sets the active flags to true.
+Set the hover delay to 0 so we don't see the weird animation, but note that it's still there
+I shrunk the button
+I changed our test file src so that it doesn't have redundancies,
+ # <img src="/images/output/video1.gif" width="250" height="250"/>
+![littlefoot-button-old](https://github.com/user-attachments/assets/7c962227-22dc-4b6a-baa0-06171ab1f709)
+![littlefoot-button-new](https://github.com/user-attachments/assets/16f5ee80-e1a7-4384-8af3-b4d3ee09b923)
 
- ### 2. Include footnote numbering within the actual footnote popup
+
+ ### 3. Include footnote numbering within the actual footnote popup
 
 
- ### 3. CSS Changes
+ ### 4. CSS Changes
+<img width="654" alt="littlefoot-demo" src="https://github.com/user-attachments/assets/7028cdff-d2ac-42f4-b1ed-59ddb46582aa">
