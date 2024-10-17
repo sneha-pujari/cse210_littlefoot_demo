@@ -1,5 +1,7 @@
 ### CSE 210 F24: Group Warm-up Exercise: Fun with Footnotes
 <div style="text-align: right"> Team 3 </div>
+ 
+ [[Updated Demo Repo](https://github.com/sneha-pujari/cse210_littlefoot_demo)]
 
 # littlefoot.js Code Review
 
@@ -69,19 +71,19 @@
 ---
 
 ## Improvements
-[[Updated Github Repo](https://github.com/sneha-pujari/cse210_littlefoot_demo)]
+[[Updated Demo Repo](https://github.com/sneha-pujari/cse210_littlefoot_demo)]
 
 ### 1. Documentation could be better
-- Instead of the provided code snippets, it would be helpful to explain with full code to understand how to integrate littlefoot into my existing code.
+- Instead of the provided code snippets, it would be helpful to explain with full code to understand how to integrate littlefoot into the existing code.
+- Expecially for the 'Options' and 'Theming' parts, it would be nice if they explain in detail of how do we can apply the change with corresponding code examples.
+- 
 
 ### 2. De-highlighting Button
- Focus isn't necessary to highlight the button while it's selected because of the active/is active/hover flags. It will be highlighted when you are still hovering after clicking, but then you don't need to click other places on the document to dehighlight it. Opening the footnote is what sets the active flags to true.
-Set the hover delay to 0 so we don't see the weird animation, but note that it's still there
-I shrunk the button
-I changed our test file src so that it doesn't have redundancies,
- # <img src="/images/output/video1.gif" width="250" height="250"/>
-![littlefoot-button-old](https://github.com/user-attachments/assets/7c962227-22dc-4b6a-baa0-06171ab1f709)
-![littlefoot-button-new](https://github.com/user-attachments/assets/16f5ee80-e1a7-4384-8af3-b4d3ee09b923)
+ Focus isn't necessary to highlight the button while it's selected because of the active/is active/hover flags. It will be highlighted when you are still hovering after clicking, but then you don't need to click other places on the document to dehighlight it. Opening the footnote is what sets the active flags to true. We set the hover delay to 0 so we don't see the animation. We shrunk the button, and changed our test file src so that it doesn't have redundancies.
+
+<img src="littlefoot-button-old.gif" width="250" height="250"/>
+<img src="littlefoot-button-new.gif" width="250" height="250"/>
+[Before] &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;[After]
 
 
  ### 3. Include footnote numbering within the actual footnote popup
@@ -89,3 +91,6 @@ I changed our test file src so that it doesn't have redundancies,
 
  ### 4. CSS Changes
 <img width="654" alt="littlefoot-demo" src="https://github.com/user-attachments/assets/7028cdff-d2ac-42f4-b1ed-59ddb46582aa">
+
+- Added a custom HTML file to demonstrate the footnotes functionality.
+- Created CSS files for custom styling such as font, pop-up of the littlefoot footnote, hover and click opening of the footnote
