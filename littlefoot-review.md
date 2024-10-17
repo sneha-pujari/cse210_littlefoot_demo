@@ -4,7 +4,7 @@
  [[Updated Demo Repo](https://github.com/sneha-pujari/cse210_littlefoot_demo)]
 
 # littlefoot.js Code Review
-<img src="littlefoot-demo.png" width="600"/>
+<img src="littlefoot-demo.png" width="500"/>
 
 ## 1. Architecture Overview
 > - Overview of the major components and their interactions.
